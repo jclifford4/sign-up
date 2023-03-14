@@ -43,10 +43,27 @@ table {
     border-spacing: 0;
 }
 
+@font-face {
+    font-family: 'Kanit';
+    src: local('Kanit'), url(./fonts/Kanit/Kanit-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url(./fonts/Poppins/Poppins-Light.ttf) format('truetype');
+}
+
+
 *
 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins','Kanit',sans-serif;
 }
+
+p
+{
+    font-family: 'Poppins';
+}
+
 
 .main
 {
