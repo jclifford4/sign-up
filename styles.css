@@ -50,6 +50,7 @@ table {
     border: 2px green solid;
     height: 100dvh;
     width: auto;
+    flex-wrap: wrap;
 }
 
 .left-main
@@ -82,11 +83,95 @@ table {
 .right-main
 {
     display: flex;
+    flex-direction: column;
     flex: 1;
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: auto;
     border: 1px blue dashed;
     flex-grow: 1.75;
 }
+
+.form-container
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    border: 1px red solid;
+    height: 400px;
+    
+    
+}
+
+input
+{
+    width: 265px;
+    height: 28px;
+    border-radius: 3px;
+}
+
+
+.form-container form
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px pink solid;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2px;
+    margin-left: 50px;
+}
+
+form div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-label-top,
+.form-label-mid,
+.form-label-bottom
+{
+   gap: 200px;
+   border: 1px blue solid;
+}
+
+.form-label-top label:first-child
+{
+    padding-right: 102px;
+}
+
+.form-input-top input:first-child,
+.form-input-mid input:first-child,
+.form-input-bottom input:first-child
+{
+    border: 1px blue solid;
+    margin-right: 125px;
+}
+
+
+.form-label-mid
+{
+    border: 1px green solid;
+}
+
+.form-label-mid label:first-child
+{
+    padding-right: 145px;
+}
+
+.form-input-mid
+{   
+    border: 1px green solid;
+} 
+
+.form-label-bottom label:first-child
+{
+    padding-right: 110px;
+}
+
+
+
