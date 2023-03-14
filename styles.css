@@ -24,7 +24,8 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-    line-height: 1;
+    line-height: 1.1;
+    width: 100vw;
 }
 ol, ul {
     list-style: none;
@@ -42,14 +43,18 @@ table {
     border-spacing: 0;
 }
 
+*
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .main
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px green solid;
     height: 100dvh;
-    width: auto;
+    width: 100%;
     flex-wrap: wrap;
 }
 
@@ -59,7 +64,6 @@ table {
     flex: 1;
     justify-content: center;
     align-items: center;
-    border: 1px red dotted;
     height: 100%;
     width: auto;
 }
@@ -86,10 +90,28 @@ table {
     flex-direction: column;
     flex: 1;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100%;
-    border: 1px blue dashed;
     flex-grow: 1.75;
+    background: #071c2d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #1F1C18, #071c2d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #000000, #071c2d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.right-main > p
+{
+    position: relative;
+    width: 700px;
+    font-size: 24px;
+    margin-left: 50px;
+    
+}
+
+.right-main > p:last-of-type
+{
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .form-container
@@ -97,9 +119,29 @@ table {
     display: flex;
     width: 100%;
     flex-direction: column;
-    
-    border: 1px red solid;
-    height: 400px;
+    height: 350px;
+    background: #8C0018;  /* fallback for old browsers */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 5px;
+}
+
+p
+{
+    color: white;
+}
+
+label
+{
+    color: white;
+    font-size: 12px;
+}
+
+.form-container p
+{
+    padding-bottom: 25px;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
     
     
 }
@@ -117,11 +159,16 @@ input
     display: flex;
     flex-direction: column;
     flex: 1;
-    border: 1px pink solid;
     justify-content: center;
     align-items: flex-start;
     gap: 2px;
-    margin-left: 50px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+a
+{
+    text-decoration: none;
+    color: darkgray;
 }
 
 form div
@@ -136,41 +183,47 @@ form div
 .form-label-bottom
 {
    gap: 200px;
-   border: 1px blue solid;
+   
 }
 
-.form-label-top label:first-child
+.form-input-top,
+.form-input-mid,
+.form-input-bottom
 {
-    padding-right: 102px;
+    margin-bottom: 25px;
 }
+
 
 .form-input-top input:first-child,
 .form-input-mid input:first-child,
 .form-input-bottom input:first-child
 {
-    border: 1px blue solid;
     margin-right: 125px;
+    margin-left: 50px;
+    
 }
 
-
-.form-label-mid
+.form-label-top label:first-child,
+.form-label-mid label:first-child,
+.form-label-bottom label:first-child
 {
-    border: 1px green solid;
+    margin-left: 50px;
+    
+}
+
+.form-label-top label:first-child
+{
+    padding-right: 128px;
 }
 
 .form-label-mid label:first-child
 {
-    padding-right: 145px;
+    padding-right: 160px;
 }
-
-.form-input-mid
-{   
-    border: 1px green solid;
-} 
 
 .form-label-bottom label:first-child
 {
-    padding-right: 110px;
+    padding-right: 135px;
 }
 
 
