@@ -80,6 +80,7 @@ p
     display: flex;
     position: relative;
     flex: 1;
+    min-width: 250px;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -96,6 +97,30 @@ p
     background-color: rgba(50, 37, 54, 0.5);
     height: 200px;
     margin-bottom: 500px;
+}
+
+.logo
+{
+   width: 150px;
+   height: 125px;
+   border: 1px blue dashed;
+   
+}
+
+.logo:hover
+{
+   transform: rotateY(360deg);
+   transition: transform 1s ease-in-out;
+}
+
+.logo > img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    opacity: .9;
+    
 }
 
 .left-main > img
@@ -123,6 +148,7 @@ p
     align-items: flex-start;
     height: 100%;
     flex-grow: 1.75;
+    flex-shrink: 2;
     background: #071c2d;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #1F1C18, #071c2d);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #000000, #071c2d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -247,6 +273,32 @@ form div
 .form-label-bottom label:first-child
 {
     padding-right: 135px;
+}
+
+form
+{
+    position: relative;
+}
+
+.submit
+{
+    width: 200px;
+    height: 40px;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 50px;
+    background-color: #061827;
+    border: none;
+    color: white;
+    box-shadow: 5px 5px 24px -1px #333232;
+    
+}
+
+.submit:hover
+{
+    background-color: #8c0018;
+    transform: scale(1.05);
 }
 
 
