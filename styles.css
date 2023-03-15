@@ -78,11 +78,24 @@ p
 .left-main
 {
     display: flex;
+    position: relative;
     flex: 1;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: auto;
+}
+
+.logo-container
+{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(50, 37, 54, 0.5);
+    height: 200px;
+    margin-bottom: 500px;
 }
 
 .left-main > img
@@ -113,7 +126,6 @@ p
     background: #071c2d;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #1F1C18, #071c2d);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #000000, #071c2d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
 }
 
 .right-main > p
@@ -122,7 +134,6 @@ p
     width: 700px;
     font-size: 24px;
     margin-left: 50px;
-    
 }
 
 .right-main > p:last-of-type
@@ -159,8 +170,6 @@ label
     font-size: 25px;
     margin-left: 50px;
     margin-top: 20px;
-    
-    
 }
 
 input
@@ -200,7 +209,6 @@ form div
 .form-label-bottom
 {
    gap: 200px;
-   
 }
 
 .form-input-top,
@@ -217,7 +225,6 @@ form div
 {
     margin-right: 125px;
     margin-left: 50px;
-    
 }
 
 .form-label-top label:first-child,
@@ -225,7 +232,6 @@ form div
 .form-label-bottom label:first-child
 {
     margin-left: 50px;
-    
 }
 
 .form-label-top label:first-child
