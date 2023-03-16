@@ -39,12 +39,14 @@ lastName.addEventListener('mouseleave', () => {
 })
 
 phoneNumber.addEventListener('input', () => {
+    
     // console.log(phoneNumber.value);
     if (phoneNumber.value.length === 3)
         phoneNumber.value = `(${phoneNumber.value}) `;
-    if (phoneNumber.value.length === 5)
-        phoneNumber.value = ` ${phoneNumber.value}`
-    // if (phoneNumber.value = ``)
+    if (phoneNumber.value.length === 9)
+        phoneNumber.value = `${phoneNumber.value}-`;
+    if (phoneNumber.value.length >= 9)
+        phoneNumber.value = `${phoneNumber.value}`;
 })
 
 
