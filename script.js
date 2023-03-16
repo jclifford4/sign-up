@@ -38,8 +38,8 @@ lastName.addEventListener('mouseleave', () => {
         lastName.style.border = 'none';
 })
 
+
 phoneNumber.addEventListener('input', () => {
-    
     
     if (phoneNumber.value.length === 3)
         phoneNumber.value = `(${phoneNumber.value}) `;
