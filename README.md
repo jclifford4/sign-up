@@ -8,9 +8,7 @@ A sign up page with input validation
 * Password matching
 * Password hiding
 * Email verification
-* Modulo
-* Deletion
-* Clear All
+* Phone number formatting
 
 ### Code Base
 * JavaScript
