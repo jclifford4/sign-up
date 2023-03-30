@@ -1,4 +1,5 @@
 # Sign Up
+## [Live Preview](https://jclifford4.github.io/sign-up/)
 
 ### Description
 A sign up page with input validation
